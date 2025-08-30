@@ -130,7 +130,7 @@ model_name = st.selectbox("🧠 Select Model", options=MODEL_NAMES_OPENAI if pro
 allow_web_search = st.checkbox("🔍 Allow Web Search")
 user_query = st.text_area("💬 Enter your Prompt:", height=160, placeholder="Debug My Code")
 
-API_URL = "http://127.0.0.1:8000/chat"
+API_URL = "https://agentic-ai-chatbot-lwfe.onrender.com"
 
 # ---- Button ----
 if st.button("🚀 Ask Agent!"):
