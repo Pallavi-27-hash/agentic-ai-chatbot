@@ -123,7 +123,7 @@ MODEL_NAMES_GROQ = ["llama-3.3-70b-versatile", "mixtral-8x7b-32768"]
 MODEL_NAMES_OPENAI = ["gpt-4o-mini"]
 
 st.markdown("### 🌐 Select Model Provider", unsafe_allow_html=True)
-provider = st.radio("", options=["OpenAI", "Groq"])
+provider =  st.radio("Select Provider:", options=["OpenAI", "Groq"])
 
 model_name = st.selectbox("🧠 Select Model", options=MODEL_NAMES_OPENAI if provider == "OpenAI" else MODEL_NAMES_GROQ)
 
