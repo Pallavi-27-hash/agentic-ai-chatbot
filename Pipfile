@@ -11,6 +11,7 @@ langgraph = "*"
 pydantic = "*"
 uvicorn = "*"
 streamlit = "*"
+fastapi = "*"
 
 [dev-packages]
 
