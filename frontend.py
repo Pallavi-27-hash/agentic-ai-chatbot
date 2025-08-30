@@ -130,7 +130,7 @@ model_name = st.selectbox("🧠 Select Model", options=MODEL_NAMES_OPENAI if pro
 allow_web_search = st.checkbox("🔍 Allow Web Search")
 user_query = st.text_area("💬 Enter your Prompt:", height=160, placeholder="Debug My Code")
 
-API_URL = "https://agentic-ai-chatbot-4-mhig.onrender.com"
+API_URL = "https://agentic-ai-chatbot-4-mhig.onrender.com/chat"
 
 # ---- Button ----
 if st.button("🚀 Ask Agent!"):
@@ -145,6 +145,7 @@ if st.button("🚀 Ask Agent!"):
             }
 
             response = requests.post(API_URL, json=payload)
+            
             if response.status_code == 200:
                 response_data = response.json()
                 if "error" in response_data:
