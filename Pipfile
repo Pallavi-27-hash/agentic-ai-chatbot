@@ -12,8 +12,10 @@ pydantic = "*"
 uvicorn = "*"
 streamlit = "*"
 fastapi = "*"
+langchain-tavily = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.12"
+
